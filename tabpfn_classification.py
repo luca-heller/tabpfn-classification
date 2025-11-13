@@ -20,10 +20,8 @@ def parse_args():
     parser.add_argument("--train_size", type=int, default=1024)
     parser.add_argument("--batch_size", type=int, default=10000)
     parser.add_argument("--seed", type=int, default=42)
-
     parser.add_argument("--target", required=True)
     parser.add_argument("--features", nargs="+", required=True)
-
     parser.add_argument("--sampling", choices=["stratified", "random"], default="stratified")
 
     return parser.parse_args()
